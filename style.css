@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*#111827*/
+
+.con {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(back1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.in-bl {
+    display: inline-block;
+    padding: 5px 40px 0px 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+#adjust {
+    padding-right: 40px;
+    padding-top: 7px;
+}
+
+#ad {
+    padding-left: 40px;
+    color: #4f84ee;
+}
+
+#a {
+    color: #f47bb9;
+}
+
+#ab {
+    color: gray;
+}
+
+#home {
+    color: rgba(76, 140, 242, 255);
+}
+
+
+/*hero section*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.design {
+    text-align: center;
+    color: white;
+}
+
+.wh {
+    color: black;
+}
+
+.bt {
+    text-align: center;
+}
+
+.ali {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+#maa {
+    margin-top: 100px;
+}
+
+#bl {
+    color: black;
+    margin-bottom: 100px;
+}
+
+.card img {
+    height: 180px;
+}
+
+.pa-cen {
+    padding: 15px;
+}
+
+.ra-d {
+    border-radius: 3%;
+}
+
+
+/*footer*/
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #030712;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.fo-n {
+    font-weight: lighter;
+}
+
+.fo- {
+    font-size: 20px;
+}
+
+.con-footer {
+    flex: 1 1 200px;
+    max-width: 350px;
+}
+
+#aa {
+    text-align: center;
+}
+
+.fl-s {
+    font-weight: lighter;
+    color: white;
+}
+
+.mu {
+    margin-left: 27px;
+    font-size: 20px;
+}
+
+.k {
+    text-align: left;
+}
+
+.fo-ot {
+    background-color: #111827;
+    height: 35px;
+    color: white;
+    font-weight: lighter;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ce-n {
+    display: flex;
+    justify-content: center;
+}
+
+#pa-d {
+    padding: 30px;
+}
+
+#l-e {
+    text-align: justify;
+}
+
+.t-c {
+    margin-left: 6px;
+}
+
+#mabo {
+    margin-bottom: 50px;
+}
+
+
+/*card*/
+
+.card {
+    width: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card .btn {
+    background-color: #00a2cc !important;
+    color: #000 !important;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+}
+
+.content {
+    padding: 18px;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.desc {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00a2cc;
+}
+
+.fle-x {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 150px 0px 150px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+/*media query*/
+
+@media (max-width: 480px) {
+    nav ul li a {
+        display: none;
+    }
+    .r-es {
+        padding: 0px 30px 0px 30px;
+    }
+    #bl {
+        text-align: justify;
+    }
+    .ce-n {
+        padding: 0px 30px 0px 30px;
+    }
+    .ex-f {
+        padding: 0px 3px 0px 3px;
+    }
+}
