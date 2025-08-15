@@ -144,7 +144,7 @@ footer ul li a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     flex-wrap: wrap;
-    padding: 80px;
+    padding: 40px;
     gap: 80px;
 }
 
