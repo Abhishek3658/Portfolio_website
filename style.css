@@ -90,6 +90,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .pro {
@@ -139,12 +140,12 @@ footer ul li a {
     margin-top: 100px;
     background-color: #030712;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
-    gap: 20px;
-    align-items: flex-start;
+    padding: 80px;
+    gap: 80px;
 }
 
 .fo-n {
@@ -153,11 +154,6 @@ footer ul li a {
 
 .fo- {
     font-size: 20px;
-}
-
-.con-footer {
-    flex: 1 1 200px;
-    max-width: 350px;
 }
 
 #aa {
@@ -223,9 +219,13 @@ footer ul li a {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.card .btn {
-    background-color: #00a2cc !important;
-    color: #000 !important;
+.card .btn,
+a {
+    color: #016dd9;
+}
+
+.card .btn:hover {
+    color: #ffffff;
 }
 
 .card:hover {
@@ -258,15 +258,66 @@ footer ul li a {
 .btn {
     display: inline-block;
     padding: 8px 15px;
-    color: #000;
     font-weight: bold;
     border-radius: 6px;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: #00a2cc;
+
+/*button*/
+
+
+/* From Uiverse.io by Botwe-Felix5820 */
+
+button {
+    height: 2.8em;
+    width: 9em;
+    background: transparent;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    border: 2px solid #016dd9;
+    outline: none;
+    color: #016dd9;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #016dd9;
+    color: #ffffff !important;
+    animation: squeeze3124 0.9s both;
+}
+
+@keyframes squeeze3124 {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .fle-x {
@@ -294,6 +345,9 @@ footer ul li a {
     }
     .ce-n {
         padding: 0px 30px 0px 30px;
+    }
+    #mar-set {
+        margin-left: 25px;
     }
     .ex-f {
         padding: 0px 3px 0px 3px;
