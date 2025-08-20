@@ -366,9 +366,29 @@
         }
     }
     /*bar*/
+    /* Desktop View (menu visible, bar hidden) */
+    
+    @media (min-width: 801px) {
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        #adjust {
+            display: none;
+            /* Bar hide */
+        }
+    }
     
     @media (max-width: 800px) {
+        .nav-links {
+            display: none;
+            /* Normal menu hide */
+        }
         #adjust {
             display: block;
+            /* Bar show */
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
         }
     }
