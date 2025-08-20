@@ -324,11 +324,10 @@
     .custom-offcanvas {
         width: 50% !important;
         /* half screen */
-        background: rgba(0, 0, 0, 0.6);
+        background: transparent;
         /* transparent background */
         backdrop-filter: blur(6px);
         /* optional blur effect */
-        color: white;
     }
     /* Remove default header background */
     
