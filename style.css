@@ -346,6 +346,9 @@ button:hover {
         text-align: justify;
     }
     .fle-x {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 250px;
     }
     .ce-n {
