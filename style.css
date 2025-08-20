@@ -367,12 +367,6 @@
     }
     /*bar*/
     
-    @media (min-width: 1200px) {
-        #adjust {
-            visibility: hidden;
-        }
-    }
-    
     @media (max-width: 800px) {
         #adjust {
             display: block;
