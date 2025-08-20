@@ -359,4 +359,7 @@ button:hover {
     .ex-f {
         padding: 0px 3px 0px 3px;
     }
+    .mu {
+        margin-left: 0px;
+    }
 }
