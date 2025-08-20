@@ -365,4 +365,10 @@ button:hover {
         gap: 20px;
         padding: 20px 20px;
     }
+    .con-footer {
+        max-width: 100%;
+    }
+    .k {
+        text-align: center;
+    }
 }
