@@ -359,16 +359,4 @@ button:hover {
     .ex-f {
         padding: 0px 3px 0px 3px;
     }
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        padding: 20px 20px;
-    }
-    .con-footer {
-        max-width: 100%;
-    }
-    .k {
-        text-align: center;
-    }
 }
