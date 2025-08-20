@@ -332,7 +332,7 @@
             text-align: justify;
         }
         .fle-x {
-            max-width: 300px;
+            max-width: 350px;
             margin: 0 auto;
             justify-content: center;
         }
@@ -347,8 +347,10 @@
         }
         .fo-n {
             color: white;
+            font-weight: 500;
         }
         .fl-s {
             color: white;
+            font-weight: 500;
         }
     }
