@@ -330,6 +330,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     gap: 40px;
     flex-wrap: wrap;
+    max-width: 250px;
 }
 
 
