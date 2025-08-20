@@ -328,7 +328,6 @@ button:hover {
     align-items: center;
     /*   grid-template-columns: repeat(auto-fit, 300px);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    padding: 0px 150px 0px 150px;
     gap: 40px;
     flex-wrap: wrap;
 }
