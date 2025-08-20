@@ -348,6 +348,7 @@ button:hover {
     .fle-x {
         max-width: 300px;
         margin: 0 auto;
+        justify-content: center;
     }
     .ce-n {
         padding: 0px 30px 0px 30px;
