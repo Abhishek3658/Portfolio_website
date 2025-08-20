@@ -343,8 +343,10 @@
             margin-left: 25px;
         }
         .ex-f {
-            padding: 2px auto;
+            padding: 5px auto;
             text-align: center;
+            color: white;
+            font-weight: 400;
         }
         .fo-n {
             color: white;
