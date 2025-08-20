@@ -343,7 +343,7 @@
             margin-left: 25px;
         }
         .ex-f {
-            padding: 5px auto;
+            padding: 12px auto;
             text-align: center;
             color: white;
             font-weight: 400;
@@ -362,6 +362,6 @@
             min-width: 200px;
         }
         .footer {
-            padding: 60px auto;
+            padding: 60px 40px;
         }
     }
