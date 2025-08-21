@@ -226,15 +226,7 @@ li {
         font-size: 0.9rem;
         padding: 10px 22px;
     }
-    .con {
+    nav .nav-links {
         display: none;
-    }
-}
-
-@media (min-width: 799px) {
-    #a,
-    #ad,
-    #ab {
-        display: block;
     }
 }
