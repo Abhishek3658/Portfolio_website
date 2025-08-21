@@ -154,7 +154,7 @@ li {
 
 /* Responsive Design */
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .card {
         padding: 25px 20px;
     }
@@ -168,5 +168,8 @@ li {
     .card button {
         font-size: 0.9rem;
         padding: 10px 22px;
+    }
+    ul {
+        display: none;
     }
 }
