@@ -1,0 +1,172 @@
+* {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(90deg, #1f2937, #111827);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.in-bl {
+    display: inline-block;
+    padding: 5px 40px 0px 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+#adjust {
+    padding-right: 40px;
+    padding-top: 7px;
+}
+
+#ad {
+    padding-left: 40px;
+    color: #4f84ee;
+}
+
+#a {
+    color: #f47bb9;
+}
+
+#ab {
+    color: gray;
+}
+
+#home {
+    color: rgba(76, 140, 242, 255);
+}
+
+.c-n-t {
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    max-width: 800px;
+    background: #111827;
+    transition: 0.4s ease-in-out;
+    clip-path: polygon(20px 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% 20px);
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card .img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 0 auto 20px auto;
+}
+
+.card span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #facc15;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card .info {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.co-lr {
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 6px 0;
+}
+
+.m-id-l {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fbbf24;
+}
+
+.card .share {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.card a {
+    color: #e5e7eb;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.card a:hover {
+    color: #ef4444;
+    transform: scale(1.2);
+}
+
+.card button {
+    padding: 12px 28px;
+    display: block;
+    margin: 30px auto 0 auto;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #facc15;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background: #ef4444;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 500px) {
+    .card {
+        padding: 25px 20px;
+    }
+    .card span {
+        font-size: 1.3rem;
+    }
+    .card .info,
+    .co-lr {
+        font-size: 0.9rem;
+    }
+    .card button {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+    }
+}
