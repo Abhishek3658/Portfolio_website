@@ -98,6 +98,12 @@
         color: gray;
     }
     
+    #ad,
+    #ab,
+    #a {
+        text-align: left;
+    }
+    
     #home {
         color: rgba(76, 140, 242, 255);
     }
