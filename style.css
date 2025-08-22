@@ -455,8 +455,7 @@
         #ad,
         #ab,
         #a {
-            position: relative;
-            left: 6px;
+            margin-left: 6px;
         }
     }
     /*bar*/
