@@ -226,7 +226,7 @@ li {
         font-size: 0.9rem;
         padding: 10px 22px;
     }
-    nav .nav-links {
+    nav ul {
         display: none !important;
     }
 }
