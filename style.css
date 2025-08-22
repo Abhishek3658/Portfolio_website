@@ -454,9 +454,7 @@
         }
         #ad,
         #ab,
-        #a {
-            margin-left: 6px;
-        }
+        #a {}
     }
     /*bar*/
     /* Desktop View (menu visible, bar hidden) */
