@@ -98,12 +98,6 @@
         color: gray;
     }
     
-    #ad,
-    #ab,
-    #a {
-        text-align: left;
-    }
-    
     #home {
         color: rgba(76, 140, 242, 255);
     }
@@ -457,6 +451,12 @@
         }
         .footer {
             padding: 60px 40px;
+        }
+        #ad,
+        #ab,
+        #a {
+            position: relative;
+            left: 6px;
         }
     }
     /*bar*/
