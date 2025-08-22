@@ -209,6 +209,29 @@ li {
 }
 
 
+/*foter*/
+
+.fo-ot {
+    background-color: #111827;
+    height: 35px;
+    color: white;
+    font-weight: lighter;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width :800px) {
+    .ex-f {
+        padding: 10px auto;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+    }
+}
+
+
 /* Responsive Design */
 
 @media (max-width: 800px) {
@@ -225,24 +248,5 @@ li {
     .card button {
         font-size: 0.9rem;
         padding: 10px 22px;
-    }
-}
-
-
-/* Mobile ke liye fix */
-
-@media (max-width: 800px) {
-    /* pura ul hi hide kar do */
-    nav ul {
-        display: none !important;
-    }
-    /* "code with Abhi" ko center me dikhane ke liye */
-    nav {
-        justify-content: center;
-    }
-    nav h3#ad {
-        padding-left: 0;
-        text-align: center;
-        width: 100%;
     }
 }
