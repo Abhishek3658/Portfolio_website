@@ -452,9 +452,16 @@
         .footer {
             padding: 60px 40px;
         }
-        #ad,
-        #ab,
-        #a {}
+        #ad {
+            text-align: left;
+            padding-left: 20px;
+            /* थोड़ा space left से */
+            margin: 0;
+        }
+        nav {
+            justify-content: space-between;
+            /* menu aur bar properly space mein */
+        }
     }
     /*bar*/
     /* Desktop View (menu visible, bar hidden) */
