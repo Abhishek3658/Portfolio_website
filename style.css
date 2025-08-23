@@ -431,10 +431,11 @@
             margin-left: 25px;
         }
         .ex-f {
-            padding: 10px auto;
+            padding: 7px auto;
             text-align: center;
             color: white;
             font-weight: 400;
+            height: 8px;
         }
         .fo-n {
             color: white;
@@ -461,6 +462,11 @@
         nav {
             justify-content: space-between;
             /* menu aur bar properly space mein */
+        }
+        #ad,
+        #a,
+        #ab {
+            font-size: small
         }
     }
     /*bar*/
