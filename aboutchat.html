@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        * {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navbar */
+        
+        .con {
+            background: linear-gradient(90deg, #1f2937, #111827);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            color: white;
+            position: relative;
+        }
+        
+        #ad {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4f84ee;
+        }
+        
+        #a {
+            color: #f47bb9;
+        }
+        
+        #ab {
+            color: gray;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links li {
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #facc15;
+        }
+        /* Hamburger Icon */
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        /* Mobile Menu */
+        
+        @media (max-width: 800px) {
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                right: -100%;
+                flex-direction: column;
+                background: #111827;
+                width: 200px;
+                padding: 20px;
+                border-radius: 10px;
+                transition: right 0.4s ease-in-out;
+            }
+            .nav-links.active {
+                right: 15px;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <nav>
+            <h3 id="ad"> code <span id="a">with</span> <span id="ab">Abhi</span></h3>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a target="_blank" href="http://about-me-git-main-abhishek-s-projects-ab6e010b.vercel.app/">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

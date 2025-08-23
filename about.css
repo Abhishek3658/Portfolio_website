@@ -60,6 +60,97 @@
 }
 
 
+/* Navbar */
+
+.con {
+    background: linear-gradient(90deg, #1f2937, #111827);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    color: white;
+    position: relative;
+}
+
+#ad {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4f84ee;
+}
+
+#a {
+    color: #f47bb9;
+}
+
+#ab {
+    color: gray;
+}
+
+.nav-links {
+    display: flex;
+    gap: 55px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+
+/* Hamburger Icon */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+/* Mobile Menu */
+
+@media (max-width: 800px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background: #111827;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        transition: right 0.4s ease-in-out;
+    }
+    .nav-links.active {
+        right: 15px;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+
 /*main*/
 
 .con {
@@ -212,7 +303,7 @@ li {
 /*foter*/
 
 .fo-ot {
-    background-color: #111827;
+    background-color: #1D2634;
     height: 35px;
     color: white;
     font-weight: lighter;
