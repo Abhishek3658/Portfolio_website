@@ -16,7 +16,7 @@
 
     <!-- Header/Navbar -->
     <header class="bg-gray-900 text-white shadow-md">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:py-2">
             <!-- Logo -->
             <h3 class="text-xl font-bold">code <span class="text-blue-500">with</span> <span class="text-cyan-400">Abhi</span></h3>
 
@@ -32,13 +32,13 @@
         <i class="fas fa-bars"></i>
       </button>
         </div>
+
         <!-- Mobile Menu (animated) -->
         <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-800 text-white flex flex-col items-center space-y-4">
             <a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf" class="hover:text-blue-400">My CV</a>
             <a href="#" class="hover:text-blue-400">About</a>
             <a href="#con-tact" class="hover:text-blue-400">Contact</a>
         </div>
-
     </header>
 
     <!-- About Section -->
@@ -108,36 +108,39 @@
 
     <!-- Social Media Icons -->
     <div class="flex justify-center space-x-6 mt-6 social-icons">
-        <a href="https://instagram.com/" target="_blank" class="text-gray-500 text-2xl hover:text-pink-500"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank" class="text-gray-500 text-2xl hover:text-black"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/9053365514" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://linkedin.com/" target="_blank" class="text-gray-500 text-2xl hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/" target="_blank" class="text-gray-500 text-2xl hover:text-pink-500"><i
+        class="fab fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank" class="text-gray-500 text-2xl hover:text-black"><i
+        class="fab fa-github"></i></a>
+        <a href="https://wa.me/919876543210" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i
+        class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="text-gray-500 text-2xl hover:text-blue-600"><i
+        class="fab fa-linkedin"></i></a>
     </div>
 
     <!-- Footer -->
     <div class="fo-ot">
         © 2025 Abhishek. Crafted with ❤️ using HTML, Tailwind CSS & JavaScript.
     </div>
-    <!--responsive slider-->
+
+    <!-- JS for Mobile Menu Toggle -->
     <script>
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
-
         let menuOpen = false;
 
         menuBtn.addEventListener("click", () => {
             if (!menuOpen) {
                 mobileMenu.classList.remove("max-h-0");
-                mobileMenu.classList.add("max-h-60"); // menu open
+                mobileMenu.classList.add("max-h-60");
                 menuOpen = true;
             } else {
                 mobileMenu.classList.remove("max-h-60");
-                mobileMenu.classList.add("max-h-0"); // menu close
+                mobileMenu.classList.add("max-h-0");
                 menuOpen = false;
             }
         });
     </script>
-
 
 </body>
 
