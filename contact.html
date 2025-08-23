@@ -5,42 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <!-- Font Awesome CDN (add in <head>) -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="contact.css">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
-
 <body class="bg-gray-50">
-    <!-- Header -->
-    <div class="header">
-        <nav>
-            <h3 id="ad"> code <span id="a">with</span> <span id="ab">Abhi</span></h3>
-            <ul>
-                <li><a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf">My CV</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#con-tact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
 
+    <!-- Header/Navbar -->
+    <header class="bg-gray-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <!-- Logo -->
+            <h3 class="text-xl font-bold">code <span class="text-blue-500">with</span> <span class="text-cyan-400">Abhi</span></h3>
 
-    <!-- About Me -->
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-10">
+                <a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf" class="hover:text-blue-400">My CV</a>
+                <a href="#" class="hover:text-blue-400">About</a>
+                <a href="#con-tact" class="hover:text-blue-400">Contact</a>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white flex flex-col items-center space-y-4 py-4">
+            <a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf" class="hover:text-blue-400">My CV</a>
+            <a href="#" class="hover:text-blue-400">About</a>
+            <a href="#con-tact" class="hover:text-blue-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
     <div class="about">
         <span>👨‍💻 About me</span>
-        <p>Hello! I'm Abhishek, a dedicated web developer with a knack for turning creative ideas into real-world applications. I specialize in front-end technologies including HTML, CSS, and JavaScript. My passion is to create elegant, responsive, and accessible
-            websites.
-        </p>
+        <p>Hello! I'm Abhishek, a dedicated web developer with a knack for turning creative ideas into real-world applications. I specialize in front-end technologies including HTML, CSS, and JavaScript.</p>
         <h1>My CV</h1>
 
-        <!-- Download Button -->
+        <!-- Download & View Buttons -->
         <a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf">
             <button class="btn">Download CV</button>
         </a>
-
-        <!-- View Button -->
         <a href="https://abhishek-resume-beta.vercel.app/" target="_blank">
             <button class="btn">View CV</button>
         </a>
@@ -98,20 +108,26 @@
 
     <!-- Social Media Icons -->
     <div class="flex justify-center space-x-6 mt-6 social-icons">
-        <a href="https://instagram.com/" target="_blank" class="text-gray-500 text-2xl hover:text-pink-500"><i
-        class="fab fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank" class="text-gray-500 text-2xl hover:text-black"><i
-        class="fab fa-github"></i></a>
-        <a href="https://wa.me/919876543210" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i
-        class="fab fa-whatsapp"></i></a>
-        <a href="https://linkedin.com/" target="_blank" class="text-gray-500 text-2xl hover:text-blue-600"><i
-        class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/" target="_blank" class="text-gray-500 text-2xl hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank" class="text-gray-500 text-2xl hover:text-black"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/919876543210" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="text-gray-500 text-2xl hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
     </div>
 
     <!-- Footer -->
     <div class="fo-ot">
         © 2025 Abhishek. Crafted with ❤️ using HTML, Tailwind CSS & JavaScript.
     </div>
+
+    <!-- JS for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 
