@@ -146,4 +146,8 @@
        .form-box {
            padding: 25px;
        }
+       .fo-ot {
+           padding: 3px auto;
+           text-align: center;
+       }
    }
