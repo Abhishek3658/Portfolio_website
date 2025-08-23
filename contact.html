@@ -32,13 +32,13 @@
         <i class="fas fa-bars"></i>
       </button>
         </div>
-
-        <!-- Mobile Menu (hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white flex flex-col items-center space-y-4 py-4">
+        <!-- Mobile Menu (animated) -->
+        <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gray-800 text-white flex flex-col items-center space-y-4">
             <a target="_blank" href="https://abhishek-resume-beta.vercel.app/" download="Abhishek-CV.pdf" class="hover:text-blue-400">My CV</a>
             <a href="#" class="hover:text-blue-400">About</a>
             <a href="#con-tact" class="hover:text-blue-400">Contact</a>
         </div>
+
     </header>
 
     <!-- About Section -->
@@ -110,7 +110,7 @@
     <div class="flex justify-center space-x-6 mt-6 social-icons">
         <a href="https://instagram.com/" target="_blank" class="text-gray-500 text-2xl hover:text-pink-500"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/" target="_blank" class="text-gray-500 text-2xl hover:text-black"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/919876543210" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/9053365514" target="_blank" class="text-gray-500 text-2xl hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
         <a href="https://linkedin.com/" target="_blank" class="text-gray-500 text-2xl hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
     </div>
 
@@ -118,16 +118,26 @@
     <div class="fo-ot">
         © 2025 Abhishek. Crafted with ❤️ using HTML, Tailwind CSS & JavaScript.
     </div>
-
-    <!-- JS for Mobile Menu Toggle -->
+    <!--responsive slider-->
     <script>
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
 
+        let menuOpen = false;
+
         menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
+            if (!menuOpen) {
+                mobileMenu.classList.remove("max-h-0");
+                mobileMenu.classList.add("max-h-60"); // menu open
+                menuOpen = true;
+            } else {
+                mobileMenu.classList.remove("max-h-60");
+                mobileMenu.classList.add("max-h-0"); // menu close
+                menuOpen = false;
+            }
         });
     </script>
+
 
 </body>
 
