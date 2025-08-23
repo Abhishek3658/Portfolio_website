@@ -132,6 +132,9 @@
        nav {
            flex-direction: column;
            padding: 20px;
+           position: relative;
+           left: 12px;
+           font-size: 15px;
        }
        nav ul {
            margin-top: 10px;
