@@ -70,8 +70,12 @@
                     <h4 class="design">I design and develop modern, responsive websites.</h4>
                     <p class="design">I specialize in HTML, CSS, JavaScript & Bootstrap. Let's build something great together!</p>
                     <div class="ali">
-                        <button type="button" href="#sc-oll" class="btn btn-primary">View my work</button>
-                        <button type="button" class="btn btn-success"><a href="contact.html" target="_blank">Contact me</a></button>
+                        <button type="button" onclick="document.getElementById('sc-oll').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary">
+        View my work
+    </button>
+                        <button type="button" onclick="window.open('contact.html','_blank')" class="btn btn-success">
+        Contact me
+    </button>
                     </div>
                 </div>
             </section>
