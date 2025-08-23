@@ -129,6 +129,10 @@
    /* Responsive */
    
    @media (max-width: 800px) {
+       nav {
+           flex-direction: column;
+           padding: 20px;
+       }
        nav ul {
            margin-top: 10px;
        }
