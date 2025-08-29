@@ -120,9 +120,10 @@
      .card .img {
          width: 100px;
          height: 100px;
-         background: #fff;
-         border-radius: 20px;
          margin: 0 auto 20px auto;
+         display: flex;
+         border-radius: 10%;
+         justify-self: center;
      }
      
      .card span {
