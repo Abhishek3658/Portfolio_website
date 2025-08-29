@@ -111,6 +111,7 @@
             flex-direction: column;
             gap: 5px;
             cursor: pointer;
+            z-index: 10000;
         }
         
         .hamburger span {
@@ -132,6 +133,7 @@
                 width: 220px;
                 padding: 20px;
                 border-radius: 12px;
+                gap: 20px;
             }
             .nav-links.active {
                 right: 15px;
@@ -148,7 +150,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             padding: 20px;
         }
         
@@ -308,7 +309,8 @@
             <span>About Me</span>
             <p class="info">🚀 Hi, I'm Abhishek, a passionate Web Designer & Developer who loves creating beautiful and user-friendly websites.</p>
 
-            <p class="co-lr"> I work with modern web technologies like HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</p>
+            <p class="co-lr"> I work with modern web technologies like HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.
+            </p>
 
             <ul>
                 <li class="co-lr">🛒 Responsive E-commerce Website </li>
@@ -318,7 +320,8 @@
                 <li class="co-lr">🛍️ Amazon-like Clone Website </li>
             </ul>
 
-            <p class="co-lr">🎯 My goal is to design websites that are simple, attractive, and responsive on every device.</p>
+            <p class="co-lr">🎯 My goal is to design websites that are simple, attractive, and responsive on every device.
+            </p>
             <p class="co-lr"> 🌱 Currently, I'm learning and improving my skills every day.</p>
 
             <div class="share">
@@ -337,7 +340,7 @@
         © 2025 Abhishek. Crafted with ❤️ using HTML, Bootstrap, Tailwind CSS & JavaScript.
     </div>
 
-    <!-- Loader Hide -->
+    <!-- Loader Hide + Navbar Toggle -->
     <script>
         window.addEventListener("load", function() {
             let loader = document.getElementById("loader");
